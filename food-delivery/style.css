@@ -1,0 +1,438 @@
+*{
+    outline: none;
+    text-decoration: none;
+    left: 0;
+    top: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    padding: 0;
+    border: none;
+}
+
+html{
+    font-size: 60.9%;
+}
+
+header{
+    display: flex;
+    top: 0;
+    left: 0;
+    justify-content: space-between;
+    padding: 2rem 9%;
+    position: fixed;
+    width: 100%;
+    background-color: white;
+    z-index: 100;
+    
+    
+}
+.logo{
+    font-size: 3rem;
+    color: #dd4108;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.navlink{
+    font-size: 2rem;
+    margin-left: 3rem;
+    color: black;
+    font-weight: 500;
+}
+nav .active{
+    color: #dd4108;
+    border-bottom: 3px solid #dd4108;
+}
+
+section{
+    min-height: 100vh;
+    padding: 10rem 9%;
+}
+.home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f3f385;
+    
+}
+nav .btn{
+    color: white;
+    background-color: #dd4108;
+    border-radius: 2rem;
+    padding: 1rem 2rem;
+    font-size: 2rem;
+    margin-left: 2rem;
+}
+.home .content p{
+    font-size: 2rem;
+}
+.home .content h3{
+    font-size: 4rem;
+}
+ span{
+    color: #dd4108;
+}
+.home .content box-icon{
+    color: #dd4108;
+}
+.home .img img{
+    width: 100%;
+}
+.btn{
+    color: white;
+    background-color: #dd4108;
+    border-radius: 2rem;
+    padding: 1rem 2rem
+}
+.btn2{
+  
+   border-radius: 2rem;
+   background-color: #f3f385;
+   width: 40%;
+   padding: 1.4rem;
+   
+}
+
+.about{
+    display: flex;
+    gap: 10rem;
+    align-items: center;
+}
+.about .img img{
+    width: 100%;
+    border-radius: 100rem;
+}
+.about .content p{
+    font-size: 2rem;
+}
+.about .content h3{
+    font-size: 4rem;
+}
+.heading_text{
+    text-align: center;
+    font-size: 3rem;
+   
+}
+
+.service{
+background-color: #f3f385;
+}
+
+.service .container{
+    display: flex;
+    gap: 10rem;
+    text-align: center;
+    justify-content: center;
+}
+
+.service .container .box{
+    flex: 1 1 30rem;
+    background-color: white;
+    border-radius: 1rem;
+    height: 45vh;
+    border:  4px solid #dd4108;
+    border-top: none;
+    border-top-right-radius:15rem;
+    
+}
+
+.service .container .box .content{
+    margin: 10rem 0 0 0;
+}
+.service .container .box .content h3{
+    font-size: 2rem;
+}
+.service .container .box .content p{
+    font-size: 1.5rem;
+}
+
+.gallary .container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 2.5rem;
+}
+.gallary .container .box{
+    display: flex;
+    overflow: hidden;
+    position: relative;
+}
+.gallary .container .box img{
+    width: 100%;
+}
+
+.gallary .container .box img:hover{
+    transform: scale(1.1);
+}
+.gallary .container .box .layer{
+position: absolute;
+justify-content: center;
+align-items: center;
+text-align: center;
+flex-direction: column;
+width: 100%;
+height: 100%;
+left: 0;
+bottom: 0;
+display: flex;
+padding: 0 4rem;
+transform: translate(100%);
+transition: .5s ease;
+
+}
+
+.gallary .container .box:hover .layer{
+    transform: translate(0%);
+}
+
+
+
+
+
+.contact form{
+    justify-content: center;
+    align-items: center;
+    display: grid;
+}
+
+.contact form .input_field{
+    width: 60rem;
+    border: 1px solid #dd4108;
+    height: 5vh;
+    border-radius: 3rem;
+}
+
+.contact form textarea{
+    width: 60rem;
+    border: 1px solid #dd4108;
+    height: 30vh;
+    border-radius: 1rem;
+}
+
+
+
+
+.discount{
+    background-color: #dd4108;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    border-radius: 1rem;
+}
+
+.discount .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+    
+}
+
+.discount .container .box img{
+    width: 50%;
+    border-radius: 50%;
+}
+
+.discount .container .box h3{
+    font-size: 3rem;
+    color: white;
+}
+
+.footer{
+    height: 50vh;
+}
+
+.footer .container{
+    display: flex;
+    justify-content: space-between;
+    gap: 10rem;
+    
+}
+
+.footer .container .box{
+    align-items: center;
+}
+
+.footer .container .box h3{
+    font-size: 3rem;
+    font-weight: 800;
+}
+
+.footer .container .box p{
+    font-size: 2rem;
+}
+
+.footer .container .box a{
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    color: #dd4108;
+    display: list-item;
+}
+
+.footer2 p{
+text-align: center;
+font-size: 2rem;
+margin-top: 10rem;
+}
+
+.divider .line{
+width: 10%;
+background-color: #dd4108;
+height: 5px;
+}
+
+.divider{
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin-bottom: 7rem;
+}
+
+.divider .circle{
+    width: 25px;
+background-color: #dd4108;
+height: 10px;
+border-radius: 50%;
+
+}
+
+.nav-toggle{
+    background-image: url(img/menu-alt-right-regular-24.png);
+    background-repeat: no-repeat;
+    width: 10%;
+    background-color: white;
+    font-weight: 800;
+    display: none;
+}
+
+
+
+@media (max-width:820px){
+    html{
+        font-size: 50%;
+    }
+  nav{
+    position: fixed;
+    inset: 0 0 0 30%;
+    background-color: #dd4108;
+    padding: min(30vh, 10vh) 2rem;
+    transform: translateX(100%);
+    transition: transform 350ms ease;
+  } 
+  
+  nav[data-visible="true"]{
+    transform: translateX(0%);
+  }
+
+  nav a{
+    color: white;
+    display: block;
+    margin: 0 6rem 2rem;
+  }
+
+  .nav-toggle[aria-expanded="true"]{
+    background-color: #dd4108;
+    background-image: url(img/x-regular-24.png);
+    width: 7%;
+    border-bottom: 4px  yellow;
+  }
+  nav .btn{
+    background-color: white;
+    color: #dd4108;
+    border-radius: 2rem;
+    padding: 1rem 2rem
+  }
+
+  .home{
+    display: grid;
+    margin-bottom: 6px;
+  }
+  .about{
+    flex-direction: column-reverse;
+  }
+
+
+  .service .container{
+    display: grid;
+  }
+
+  nav .active{
+    color: white;
+    border-bottom:3px solid white;
+   
+    
+}
+  .contact form .input_field{
+    width: 30rem;
+    border: 1px solid #dd4108;
+    height: 5vh;
+    border-radius: 3rem;
+}
+
+.contact form textarea{
+    width: 30rem;
+    border: 1px solid #dd4108;
+    height: 30vh;
+    border-radius: 1rem;
+    margin-bottom: 30%;
+}
+.discount .container{
+    display: block;
+}
+
+.discount .container .box{
+    justify-content: center;
+    text-align: center;
+}
+
+.footer .container{
+    display: block;
+}
+.gallary .container{
+    display: block;
+}
+.nav-toggle{
+    display: block;
+    z-index: 100;
+}
+
+}
+
+@media (max-width:1136px){
+  nav{
+    position: fixed;
+    inset: 0 0 0 30%;
+    background-color: #dd4108;
+    padding: min(30vh, 10vh) 2rem;
+    transform: translateX(100%);
+    transition: transform 350ms ease;
+  } 
+  
+  nav[data-visible="true"]{
+    transform: translateX(0%);
+  }
+
+  nav a{
+    color: white;
+    display: block;
+    margin: 0 6rem 2rem;
+  }
+
+  .nav-toggle[aria-expanded="true"]{
+    border-bottom:5px solid white;
+  }
+  nav .btn{
+    background-color: white;
+    color: #dd4108;
+    border-radius: 2rem;
+    padding: 1rem 2rem
+  }
+
+  nav .active{
+    color: white;
+    border-bottom:3px solid white;
+   
+  }
+
+.nav-toggle{
+    display: block;
+    z-index: 100;
+}
+
+}
